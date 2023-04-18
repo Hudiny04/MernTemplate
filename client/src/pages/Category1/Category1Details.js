@@ -15,6 +15,10 @@ const Category1Details = () => {
       if (res.ok) {
         setRecord(data);
         setFetched(true);
+      } else {
+        console.log("Error");
+        navigate("/");
+      
       }
     };
     fetchWorkouts();

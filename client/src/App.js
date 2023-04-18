@@ -21,6 +21,7 @@ function App() {
             <Route path="/category4" element={<Category4 />} />
            
             <Route path="/category1/:id" element={<Category1Details />} />
+          
 
              
             <Route path="*" element={<h1>404: Not Found</h1>} />
