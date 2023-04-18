@@ -34,8 +34,8 @@ const Category1Form = () => {
         placeholder="Workout Title"
         {...register("title", {})}
       />
-      <input type="number" placeholder="Load" {...register("load", {})} />
-      <input type="number" placeholder="Reps" {...register("reps", {})} />
+      <input type="number" min={0} placeholder="Load" {...register("load", {})} />
+      <input type="number" min={0} placeholder="Reps" {...register("reps", {})} />
 
       <input type="submit" />
     </form>
